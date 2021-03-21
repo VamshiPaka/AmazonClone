@@ -11,8 +11,12 @@ function Counter() {
   function increase() {
     setCount(count + 1);
   }
+  function decrease() {
+    setCount(count - 1);
+  }
   return (
     <div>
+      <button onClick={decrease}>-</button>
       My Count is {count}
       <button onClick={increase}>+</button>
     </div>
